@@ -12,8 +12,8 @@
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## fonts 
+/* -------------------------------------------------------------------
+ * ## fonts
  * ------------------------------------------------------------------- */
  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Marcellus&family=Gothic+A1:wght@300;400;500;600;700&display=fallback");
 
@@ -21,17 +21,17 @@
      --font-1    : "Lora", serif;
      --font-2    : "Gothic A1", sans-serif;
      --font-3    : "Marcellus", serif;
- 
+
      /* monospace
      */
      --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
  }
- 
- /* ------------------------------------------------------------------- 
+
+ /* -------------------------------------------------------------------
   * ## colors
   * ------------------------------------------------------------------- */
  :root {
- 
+
      /* color-1(#5B5E53)
       * color-2(#36151E)
       * color-3(#FFE4AF)
@@ -39,7 +39,7 @@
      --color-1                      : hsla(76, 6%, 35%, 1);
      --color-2                      : hsla(344, 44%, 25%, 1);
      --color-3                      : hsla(40, 100%, 75%, 1);
- 
+
      /* theme color variations
       */
      --color-1-lighter              : hsla(76, 6%, 55%, 1);
@@ -54,9 +54,9 @@
      --color-3-light                : hsla(40, 100%, 85%, 1);
      --color-3-dark                 : hsla(40, 100%, 65%, 1);
      --color-3-darker               : hsla(40, 100%, 55%, 1);
- 
+
      /* feedback colors
-      * color-error(#ffd1d2), color-success(#c8e675), 
+      * color-error(#ffd1d2), color-success(#c8e675),
       * color-info(#d7ecfb), color-notice(#fff099)
       */
      --color-error                  : hsla(359, 100%, 91%, 1);
@@ -67,10 +67,10 @@
      --color-success-content        : hsla(76, 29%, 28%, 1);
      --color-info-content           : hsla(205, 32%, 31%, 1);
      --color-notice-content         : hsla(51, 30%, 30%, 1);
- 
-     /* shades 
-      * generated using 
-      * Tint & Shade Generator 
+
+     /* shades
+      * generated using
+      * Tint & Shade Generator
       * (https://maketintsandshades.com/)
       */
      --color-black                  : #000000;
@@ -94,14 +94,14 @@
      --color-gray-2                 : #d0d0d0;
      --color-gray-1                 : #e8e8e8;
      --color-white                  : #ffffff;
- 
+
      /* text
       */
      --color-text-dark              : var(--color-black);
      --color-text                   : var(--color-gray-10);
      --color-text-light             : var(--color-gray-7);
      --color-placeholder            : var(--color-gray-6);
- 
+
      /* buttons
       */
      --color-btn                    : var(--color-3-light);
@@ -116,35 +116,35 @@
      --color-btn-stroke-text        : var(--color-black);
      --color-btn-stroke-hover       : var(--color-1-darker);
      --color-btn-stroke-hover-text  : var(--color-3-light);
- 
+
      /* preloader
       */
      --color-preloader-bg           : var(--color-gray-10);
      --color-loader                 : white;
      --color-loader-light           : rgba(255, 255, 255, 0.1);
- 
+
      /* others
       */
      --color-body                   : var(--color-3-lighter);
      --color-border                 : rgba(0, 0, 0, .1);
      --border-radius                : 3px;
  }
- 
- /* ------------------------------------------------------------------- 
+
+ /* -------------------------------------------------------------------
   * ## spacing and typescale
   * ------------------------------------------------------------------- */
  :root {
- 
+
      /* spacing
-      * base font size: 20px 
+      * base font size: 20px
       * vertical space unit : 32px
       */
      --base-size        : 62.5%;
      --multiplier       : 1;
      --base-font-size   : calc(2rem * var(--multiplier));
      --space            : calc(3.2rem * var(--multiplier));
- 
-     /* vertical spacing 
+
+     /* vertical spacing
       */
      --vspace-0_125     : calc(0.125 * var(--space));
      --vspace-0_25      : calc(0.25 * var(--space));
@@ -164,7 +164,7 @@
      --vspace-4         : calc(4 * var(--space));
      --vspace-4_5       : calc(4.5 * var(--space));
      --vspace-5         : calc(5 * var(--space));
- 
+
      /* type scale
       * ratio 1         :2 | base: 20px
       * -------------------------------------------------------
@@ -195,13 +195,13 @@
      --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
      --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
      --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
- 
+
      /* default button height
       */
      --vspace-btn       : var(--vspace-2);
  }
- 
- /* on mobile devices below 600px, change the value of '--multiplier' 
+
+ /* on mobile devices below 600px, change the value of '--multiplier'
   * to adjust the values of base font size and vertical space unit.
   */
  @media screen and (max-width: 600px) {
@@ -209,12 +209,12 @@
          --multiplier : .875;
      }
  }
- 
- /* ------------------------------------------------------------------- 
+
+ /* -------------------------------------------------------------------
   * ## grid variables
   * ------------------------------------------------------------------- */
  :root {
- 
+
      /* widths for rows and containers
       */
      --width-full     : 100%;
@@ -225,12 +225,12 @@
      --width-narrow   : 1000px;
      --width-narrower : 800px;
      --width-grid-max : var(--width-max);
- 
+
      /* gutter
       */
      --gutter         : 2.4rem;
  }
- 
+
  /* on medium screen devices
   */
  @media screen and (max-width: 1200px) {
@@ -238,7 +238,7 @@
          --gutter : 1.8rem;
      }
  }
- 
+
  /* on mobile devices
   */
  @media screen and (max-width: 600px) {
@@ -529,18 +529,18 @@ textarea {
  *
  *
  *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
+ * - Grid breakpoints are based on MAXIMUM WIDTH media queries,
  *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
+ * - Grid columns without a specified width will automatically layout
  *   as equal width columns.
  *
- * - BLOCK GRID columns(columns inside BLOCK GRID containers) are 
- *   equally-sized columns define at parent/row level. 
+ * - BLOCK GRID columns(columns inside BLOCK GRID containers) are
+ *   equally-sized columns define at parent/row level.
  *   A BLOCK GRID container's class attribute value begins with "block-".
  *
  * ------------------------------------------------------------------- */
 
-/* row 
+/* row
  */
 .row {
     width     : 92%;
@@ -613,7 +613,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## large screen devices 
+ * ## large screen devices
  * -------------------------------------------------------------------- */
 .lg-1 {
     flex  : none;
@@ -711,7 +711,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## medium screen devices 
+ * ## medium screen devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     .md-1 {
@@ -815,7 +815,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## tablet devices 
+ * ## tablet devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .tab-1 {
@@ -919,7 +919,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## mobile devices 
+ * ## mobile devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
     .row {
@@ -1034,7 +1034,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## small screen devices 
+ * ## small screen devices
  * --------------------------------------------------------------------*/
 
 /* stack columns on small screen devices
@@ -1168,8 +1168,8 @@ textarea {
 
 /* ===================================================================
  * # PRELOADER
- * 
- * 
+ *
+ *
  * -------------------------------------------------------------------
  * - markup:
  *
@@ -1362,7 +1362,7 @@ textarea {
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## page loaded
  * ------------------------------------------------------------------- */
 .ss-loaded #preloader {
@@ -1559,7 +1559,7 @@ header h1 {
 }
 
 /* responsive:
- * header 
+ * header
  */
 @media screen and (max-width: 600px) {
     header::after {

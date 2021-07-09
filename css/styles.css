@@ -1,4 +1,4 @@
-/* =================================================================== 
+/* ===================================================================
  *  Knox Main Stylesheet
  *  Ver. 1.0.0
  *  03-23-2021
@@ -6,18 +6,18 @@
  *
  *  TOC:
  *  # SETTINGS
- *      ## fonts 
+ *      ## fonts
  *      ## colors
  *      ## spacing and typescale
  *      ## grid variables
  *  # NORMALIZE
  *  # BASE SETUP
  *  # GRID
- *      ## large screen devices 
- *      ## medium screen devices 
- *      ## tablet devices 
- *      ## mobile devices 
- *      ## small screen devices 
+ *      ## large screen devices
+ *      ## medium screen devices
+ *      ## tablet devices
+ *      ## mobile devices
+ *      ## small screen devices
  *  # UTILITY CLASSES
  *  # TYPOGRAPHY
  *      ## base type styles
@@ -34,7 +34,7 @@
  *  # COMPONENTS
  *      ## pagination
  *      ## alert box
- *      ## skillbars 
+ *      ## skillbars
  *      ## stats tabs
  *  # PROJECT-WIDE SHARED STYLES
  *      ## media classes
@@ -48,7 +48,7 @@
  *      ## intro counter
  *      ## intro social
  *      ## intro notify
- *      ## modal 
+ *      ## modal
  *      ## intro scrolldown
  *      ## intro transitions
  *  # DETAILS
@@ -56,7 +56,7 @@
  *      ## services
  *      ## contact
  *      ## go top
- *      ## footer 
+ *      ## footer
  *
  * ------------------------------------------------------------------ */
 
@@ -67,8 +67,8 @@
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## fonts 
+/* -------------------------------------------------------------------
+ * ## fonts
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Marcellus&family=Gothic+A1:wght@300;400;500;600;700&display=fallback");
 
@@ -82,7 +82,7 @@
     --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
@@ -111,7 +111,7 @@
     --color-3-darker               : hsla(40, 100%, 55%, 1);
 
     /* feedback colors
-     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-error(#ffd1d2), color-success(#c8e675),
      * color-info(#d7ecfb), color-notice(#fff099)
      */
     --color-error                  : hsla(359, 100%, 91%, 1);
@@ -123,9 +123,9 @@
     --color-info-content           : hsla(205, 32%, 31%, 1);
     --color-notice-content         : hsla(51, 30%, 30%, 1);
 
-    /* shades 
-     * generated using 
-     * Tint & Shade Generator 
+    /* shades
+     * generated using
+     * Tint & Shade Generator
      * (https://maketintsandshades.com/)
      */
     --color-black                  : #000000;
@@ -185,13 +185,13 @@
     --border-radius                : 3px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## spacing and typescale
  * ------------------------------------------------------------------- */
 :root {
 
     /* spacing
-     * base font size: 20px 
+     * base font size: 20px
      * vertical space unit : 32px
      */
     --base-size        : 62.5%;
@@ -199,7 +199,7 @@
     --base-font-size   : calc(2rem * var(--multiplier));
     --space            : calc(3.2rem * var(--multiplier));
 
-    /* vertical spacing 
+    /* vertical spacing
      */
     --vspace-0_125     : calc(0.125 * var(--space));
     --vspace-0_25      : calc(0.25 * var(--space));
@@ -256,7 +256,7 @@
     --vspace-btn       : var(--vspace-2);
 }
 
-/* on mobile devices below 600px, change the value of '--multiplier' 
+/* on mobile devices below 600px, change the value of '--multiplier'
  * to adjust the values of base font size and vertical space unit.
  */
 @media screen and (max-width: 600px) {
@@ -265,7 +265,7 @@
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## grid variables
  * ------------------------------------------------------------------- */
 :root {
@@ -584,18 +584,18 @@ textarea {
  *
  *
  *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
+ * - Grid breakpoints are based on MAXIMUM WIDTH media queries,
  *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
+ * - Grid columns without a specified width will automatically layout
  *   as equal width columns.
  *
- * - BLOCK GRID columns(columns inside BLOCK GRID containers) are 
- *   equally-sized columns define at parent/row level. 
+ * - BLOCK GRID columns(columns inside BLOCK GRID containers) are
+ *   equally-sized columns define at parent/row level.
  *   A BLOCK GRID container's class attribute value begins with "block-".
  *
  * ------------------------------------------------------------------- */
 
-/* row 
+/* row
  */
 .row {
     width     : 92%;
@@ -668,7 +668,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## large screen devices 
+ * ## large screen devices
  * -------------------------------------------------------------------- */
 .lg-1 {
     flex  : none;
@@ -766,7 +766,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## medium screen devices 
+ * ## medium screen devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     .md-1 {
@@ -870,7 +870,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## tablet devices 
+ * ## tablet devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .tab-1 {
@@ -974,7 +974,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## mobile devices 
+ * ## mobile devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
     .row {
@@ -1089,7 +1089,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## small screen devices 
+ * ## small screen devices
  * --------------------------------------------------------------------*/
 
 /* stack columns on small screen devices
@@ -1222,10 +1222,10 @@ textarea {
 
 
 /* ===================================================================
- * # TYPOGRAPHY 
+ * # TYPOGRAPHY
  *
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  * type scale - ratio 1:2 | base: 20px
  * -------------------------------------------------------------------
  *
@@ -1276,7 +1276,7 @@ a:active {
 
 /* headings
  */
-h1, h2, h3, h4, h5, h6, 
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family            : var(--font-2);
     font-weight            : 500;
@@ -1670,7 +1670,7 @@ dd {
     margin : 0 0 0 2rem;
 }
 
-/* definition list line style 
+/* definition list line style
  */
 .lining dt,
 .lining dd {
@@ -1697,7 +1697,7 @@ dd {
     margin-left : -0.2em;
 }
 
-/* definition list dictionary style 
+/* definition list dictionary style
  */
 .dictionary-style dt {
     display       : inline;
@@ -1749,8 +1749,8 @@ img,
 
 /* ===================================================================
  * # PRELOADER
- * 
- * 
+ *
+ *
  * -------------------------------------------------------------------
  * - markup:
  *
@@ -1943,7 +1943,7 @@ img,
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## page loaded
  * ------------------------------------------------------------------- */
 .ss-loaded #preloader {
@@ -2088,7 +2088,7 @@ label>input[type="radio"] {
     top      : 2px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## style placeholder text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
@@ -2123,7 +2123,7 @@ label>input[type="radio"] {
     color : var(--color-placeholder);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## change autocomplete styles in Chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
@@ -2443,7 +2443,7 @@ td:last-child {
     background-color : transparent;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * pagination
  * ------------------------------------------------------------------- */
@@ -2453,8 +2453,8 @@ td:last-child {
     }
 }
 
-/* ------------------------------------------------------------------- 
- * ## alert box 
+/* -------------------------------------------------------------------
+ * ## alert box
  * ------------------------------------------------------------------- */
 .alert-box {
     padding       : var(--vspace-0_75) 4rem var(--vspace-0_75) 3.2rem;
@@ -2544,8 +2544,8 @@ td:last-child {
     transition : all .5s;
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars 
+/* -------------------------------------------------------------------
+ * ## skillbars
  * ------------------------------------------------------------------- */
 .skill-bars {
     list-style : none;
@@ -2751,7 +2751,7 @@ td:last-child {
 }
 
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## media classes
  * ------------------------------------------------------------------- */
 
@@ -2785,7 +2785,7 @@ img.u-pull-left {
     height   : 100%;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## theme-specific typography classes
  * ------------------------------------------------------------------- */
 .text-pretitle {
@@ -2820,7 +2820,7 @@ img.u-pull-left {
     margin-top        : 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * project-wide shared styles
  * ------------------------------------------------------------------- */
@@ -2910,10 +2910,10 @@ img.u-pull-left {
     width               : 100%;
     height              : 100vh;
     min-height          : calc(25.5 * var(--space));
-    box-shadow          : 0 0.8px 0.8px rgba(0, 0, 0, 0.031), 
-                          0 1.9px 1.9px rgba(0, 0, 0, 0.044), 
-                          0 3.9px 3.9px rgba(0, 0, 0, 0.056), 
-                          0 8px 8px rgba(0, 0, 0, 0.069), 
+    box-shadow          : 0 0.8px 0.8px rgba(0, 0, 0, 0.031),
+                          0 1.9px 1.9px rgba(0, 0, 0, 0.044),
+                          0 3.9px 3.9px rgba(0, 0, 0, 0.056),
+                          0 8px 8px rgba(0, 0, 0, 0.069),
                           0 22px 22px rgba(0, 0, 0, 0.1);
     overflow            : hidden;
     position            : relative;
@@ -3250,7 +3250,7 @@ img.u-pull-left {
 }
 
 /* -------------------------------------------------------------------
- * ## modal 
+ * ## modal
  * ------------------------------------------------------------------- */
 .ss-modal {
     z-index          : 400;
@@ -3483,7 +3483,7 @@ img.u-pull-left {
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * intro
  * ------------------------------------------------------------------- */
@@ -3764,8 +3764,8 @@ img.u-pull-left {
     top                        : 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## services 
+/* -------------------------------------------------------------------
+ * ## services
  * ------------------------------------------------------------------- */
 .services-list {
     margin-top    : var(--vspace-1_5);
@@ -3791,7 +3791,7 @@ img.u-pull-left {
     margin-bottom : var(--vspace-0_5);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## contact
  * ------------------------------------------------------------------- */
 
@@ -3866,7 +3866,7 @@ img.u-pull-left {
     color : var(--color-1);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## go top
  * ------------------------------------------------------------------- */
 .ss-go-top {
@@ -3937,8 +3937,8 @@ img.u-pull-left {
     bottom           : calc(100% + 2.8rem);
 }
 
-/* ------------------------------------------------------------------- 
- * ## footer 
+/* -------------------------------------------------------------------
+ * ## footer
  * ------------------------------------------------------------------- */
 .s-details footer {
     margin-top : var(--vspace-3);
@@ -3971,7 +3971,7 @@ img.u-pull-left {
     display : none;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * details
  * ------------------------------------------------------------------- */
